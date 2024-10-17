@@ -1,0 +1,85 @@
+/* CSS for movie details container */
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#main{
+    /* border: 20px solid; */
+    display: flex;
+}
+.movie-container {
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .movie-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* CSS for movie image */
+  .movie-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* CSS for movie title */
+  .movie-container h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .movie-container h1:hover {
+    color: #ff6347;
+  }
+  
+  /* CSS for trailer button */
+  .movie-container button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .movie-container button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* CSS for YouTube video container */
+  .video-container {
+    height: 390px;
+    /* border: 20px solid; */
+    width: 640px;
+    margin-top: 120px;
+    margin-left: 50px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .video-container:hover {
+    transform: scale(1.03);
+  }
+  
